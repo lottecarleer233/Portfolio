@@ -22,6 +22,126 @@
         flex: 1;
       }
 
+      .hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  gap: 40px;
+}
+
+.hero-left {
+  max-width: 500px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffe4ef;
+  color: #e60076;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.hero h1 span {
+  color: #e60076;
+}
+
+.hero p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #e60076;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  border: 2px solid #e60076;
+  color: #e60076;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.hero-right img {
+  max-width: 500px;
+  border-radius: 10px;
+   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.services {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ff2a8a, #e60076);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-box img {
+  width: 24px;
+  height: 24px;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
       .nav {
         display: flex;
         justify-content: space-between;
@@ -108,6 +228,39 @@
     </div>
 
   </section>
+
+  <section class="services">
+  <h2>Wat ik doe</h2>
+
+  <div class="services-grid">
+    
+    <div class="service-card">
+      <div class="icon-box">
+        <img src="./Images/Icon design.svg" alt="Design icon">
+      </div>
+      <h3>UI/UX Design</h3>
+      <p>Het ontwerpen van intuïtieve interfaces in Figma met een focus op gebruikerservaring en visuele aantrekkelijkheid.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-box">
+        <img src="./Images/Icon development.svg" alt="Development icon">
+      </div>
+      <h3>Development</h3>
+      <p>Het ontwikkelen van websites en apps met HTML/CSS, React Native, PHP en diverse CMS-systemen.</p>
+    </div>
+
+    <div class="service-card">
+      <div class="icon-box">
+        <img src="./Images/Icon branding.svg" alt="Branding icon">
+      </div>
+      <h3>Branding</h3>
+      <p>Het creëren van sterke visuele identiteiten die merken tot leven brengen en onderscheiden.</p>
+    </div>
+
+  </div>
+</section>
+
 
     </main>
     <footer class="footer">
