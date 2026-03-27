@@ -22,6 +22,119 @@
         flex: 1;
       }
 
+      .projects-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+
+.projects-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.projects-hero h1 {
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+
+.projects-hero h1 span {
+  color: #ec4899;
+}
+
+.projects-hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  background: #ffffff;
+  margin-bottom: 60px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #f5dbe7;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.project-image img {
+   width: 100%;
+   height: 500px;
+  object-fit: cover;
+  display: block;
+}
+
+
+.project-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-category {
+  color: #ec4899;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.project-title {
+  font-size: 26px;
+  margin-bottom: 14px;
+  color: #111;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.project-date {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+
+.project-tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.project-tags span {
+  background: #fdf2f8;
+  color: #ec4899;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+
+.project-link {
+  color: #ec4899;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-link:hover {
+  opacity: 0.7;
+}
+
+
+
+
       .nav {
         display: flex;
         justify-content: space-between;
@@ -94,11 +207,70 @@
     <div class="project-card">
 
       <div class="project-image">
-        <img src="./Images/Screenshot 2025-05-15 at 10.45.07 1.svg" alt="Jazzzolder">
+        <img src="./Images/jazzzolder .png" alt="Jazzzolder">
       </div>
 
       <div class="project-content">
-        <p class="project-category">UI/UX Design</p>
+        <p class="project-category">Web Development & Design</p>
+
+        <h3 class="project-title">E-commerce Platform Redesign</h3>
+
+        <p class="project-description">
+          Een complete herontwerp van een e-commerce platform met focus op gebruiksvriendelijkheid en conversie. Het project omvatte gebruikersonderzoek, wireframing en high-fidelity prototypes.
+        </p>
+
+        <p class="project-date">📅 Maart 2026</p>
+
+        <div class="project-tags">
+          <span>UI/UX</span>
+          <span>E-commerce</span>
+          <span>Figma</span>
+        </div>
+
+        <a href="#" class="project-link">Bekijk project ↗</a>
+      </div>
+
+    </div>
+  
+
+  
+    <div class="project-card">
+
+      <div class="project-image">
+        <img src="./Images/jazzzolder .png" alt="Jazzzolder">
+      </div>
+
+      <div class="project-content">
+        <p class="project-category">Web Development & Design</p>
+
+        <h3 class="project-title">E-commerce Platform Redesign</h3>
+
+        <p class="project-description">
+          Een complete herontwerp van een e-commerce platform met focus op gebruiksvriendelijkheid en conversie. Het project omvatte gebruikersonderzoek, wireframing en high-fidelity prototypes.
+        </p>
+
+        <p class="project-date">📅 Maart 2026</p>
+
+        <div class="project-tags">
+          <span>UI/UX</span>
+          <span>E-commerce</span>
+          <span>Figma</span>
+        </div>
+
+        <a href="#" class="project-link">Bekijk project ↗</a>
+      </div>
+
+    </div>
+  
+
+    <div class="project-card">
+
+      <div class="project-image">
+        <img src="./Images/jazzzolder .png" alt="Jazzzolder">
+      </div>
+
+      <div class="project-content">
+        <p class="project-category">Web Development & Design</p>
 
         <h3 class="project-title">E-commerce Platform Redesign</h3>
 
@@ -119,6 +291,7 @@
 
     </div>
   </section>
+  
 </main>
     <footer class="footer">
       <p>© 2026 Lotte Carleer. Alle rechten voorbehouden.</p>
