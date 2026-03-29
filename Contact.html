@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,111 +7,38 @@
     <link rel="stylesheet" href="Normalize.css" />
 
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
         min-height: 100vh;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(#fdf2f8, #ffffff, #fdf2f8);
-        background-repeat: no-repeat;
-
         display: flex;
-        flex-direction:  column;
+        flex-direction: column;
+        font-family: "Inter", Arial, sans-serif;
+        color: #111;
+        background: linear-gradient(to bottom, #fdf2f8, #ffffff, #fdf2f8);
+        background-repeat: no-repeat;
       }
 
       main {
         flex: 1;
       }
 
-      * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Inter", Arial, sans-serif;
-  background: #f6f6f6;
-  color: #111;
-}
-
-
-.contact {
-  min-height: 100vh;
-  padding: 100px 20px 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background: linear-gradient(to bottom, #fff5fa, #ffffff);
-}
-
-
-.contact__title {
-  font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.contact__title span {
-  color: #ff2d96;
-}
-
-
-.contact__subtitle {
-  max-width: 700px;
-  font-size: 1.25rem;
-  line-height: 1.6;
-  color: #6b7280;
-  margin-bottom: 60px;
-}
-
-
-.contact__card {
-  width: min(100%, 720px);
-  padding: 55px 20px;
-  border-radius: 22px;
-  background: linear-gradient(180deg, #ff2d96 0%, #e60073 100%);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  transition: all 0.25s ease;
-}
-
-.contact__card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
-}
-
-
-.contact__icon {
-  width: 50px;
-  margin-bottom: 20px;
-}
-
-
-.contact__card-title {
-  font-size: 1.8rem;
-  color: white;
-  margin-bottom: 12px;
-}
-
-.contact__email {
-  font-size: 1.4rem;
-  color: white;
-  opacity: 0.95;
-}
-
       .nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding: 10px 30px;
+        padding: 12px 30px;
         background-color: #ffffff;
-         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+
+      .nav-left img {
+        height: 40px;
+        display: block;
       }
 
       .nav-right {
@@ -123,18 +50,123 @@ body {
         text-decoration: none;
         color: #333;
         font-size: 16px;
+        transition: color 0.2s ease;
       }
 
-      .nav a.active {
+      .nav a.active,
+      .nav a:hover {
         color: #e60076;
       }
 
-      .nav a:hover{
-        color: #e60076;
+      .contact {
+        padding: 90px 20px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
       }
 
-      .nav img {
-        height: 40px;
+      .contact__title {
+        font-size: clamp(2.8rem, 6vw, 4.5rem);
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.1;
+      }
+
+      .contact__title span {
+        color: #ff2d96;
+      }
+
+      .contact__subtitle {
+        max-width: 720px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        color: #6b7280;
+        margin-bottom: 55px;
+      }
+
+      .contact__card {
+        width: min(100%, 720px);
+        padding: 55px 20px;
+        border-radius: 22px;
+        background: linear-gradient(180deg, #ff2d96 0%, #e60073 100%);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        margin-bottom: 30px;
+      }
+
+      .contact__card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+      }
+
+      .contact__icon {
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+        margin-bottom: 20px;
+      }
+
+      .contact__card-title {
+        font-size: 1.8rem;
+        color: white;
+        margin-bottom: 12px;
+      }
+
+      .contact__email {
+        font-size: 1.4rem;
+        color: white;
+        opacity: 0.95;
+      }
+
+      .socials {
+        width: 100%;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+      }
+
+      .social-card {
+        background: #fcfcfc;
+        border: 1px solid #f4dfe8;
+        border-radius: 14px;
+        min-height: 165px;
+        padding: 28px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .social-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+      }
+
+      .social-card__icon {
+        width: 44px;
+        height: 44px;
+        object-fit: contain;
+        margin-bottom: 18px;
+      }
+
+      .social-card__title {
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #111;
+        margin-bottom: 10px;
+      }
+
+      .social-card__text {
+        font-size: 1.05rem;
+        color: #6b7280;
+        line-height: 1.4;
       }
 
       .footer {
@@ -146,72 +178,121 @@ body {
         box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
       }
 
+      .footer p + p {
+        margin-top: 8px;
+      }
+
       .footer img {
         height: 14px;
         vertical-align: middle;
       }
+
+      @media (max-width: 900px) {
+        .socials {
+          grid-template-columns: 1fr;
+        }
+
+        .nav {
+          flex-direction: column;
+          gap: 15px;
+        }
+
+        .nav-right {
+          gap: 20px;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .contact {
+          padding: 70px 20px 40px;
+        }
+
+        .contact__subtitle {
+          font-size: 1.05rem;
+          margin-bottom: 40px;
+        }
+
+        .contact__card {
+          padding: 40px 20px;
+        }
+
+        .contact__card-title {
+          font-size: 1.5rem;
+        }
+
+        .contact__email {
+          font-size: 1.1rem;
+          word-break: break-word;
+        }
+
+        .social-card__title {
+          font-size: 1.4rem;
+        }
+
+        .social-card__text {
+          font-size: 1rem;
+        }
+      }
     </style>
   </head>
+
   <body>
     <nav class="nav">
       <div class="nav-left">
-        <a href="index.html"><img src="./Images/Link.svg" alt="Site Logo" /></a>
+        <a href="index.html">
+          <img src="./Images/Link.svg" alt="Site Logo" />
+        </a>
       </div>
 
       <div class="nav-right">
-        <a href="index.html" >Home</a>
+        <a href="index.html">Home</a>
         <a href="Projects.html">Projecten</a>
         <a href="Contact.html" class="active">Contact</a>
       </div>
     </nav>
+
     <main class="contact">
-  <h1 class="contact__title">
-    Laten we <span>Connecten</span>
-  </h1>
+      <h1 class="contact__title">
+        Laten we <span>Connecten</span>
+      </h1>
 
-  <p class="contact__subtitle">
-    Altijd open voor nieuwe projecten, samenwerkingen of gewoon een leuke chat over design. Stuur me een berichtje!
-  </p>
+      <p class="contact__subtitle">
+        Altijd open voor nieuwe projecten, samenwerkingen of gewoon een leuke chat over design. Stuur me een berichtje!
+      </p>
 
-  <div class="contact__card">
-    <img class="contact__icon" src="./Images/Icon.svg" alt="email icon">
+      <div class="contact__card">
+        <img class="contact__icon" src="./Images/Icon.svg" alt="Email icon" />
+        <h2 class="contact__card-title">Email me</h2>
+        <p class="contact__email">lottecarleer@gmail.com</p>
+      </div>
 
-    <h2 class="contact__card-title">Email me</h2>
+      <section class="socials">
+        <div class="social-card">
+          <img class="social-card__icon" src="./Images/LinkedIn.svg" alt="LinkedIn" />
+          <h2 class="social-card__title">LinkedIn</h2>
+          <p class="social-card__text">Professioneel netwerk</p>
+        </div>
 
-    <p class="contact__email">lottecarleer@gmail.com</p>
-  </div>
+        <div class="social-card">
+          <img class="social-card__icon" src="./Images/Github.svg" alt="Github" />
+          <h2 class="social-card__title">Github</h2>
+          <p class="social-card__text">Code &amp; projecten</p>
+        </div>
 
-  <section>
+        <div class="social-card">
+          <img class="social-card__icon" src="./Images/Insta.svg" alt="Instagram" />
+          <h2 class="social-card__title">Instagram</h2>
+          <p class="social-card__text">Creatieve inspiratie</p>
+        </div>
+      </section>
+    </main>
 
-    <div>
-      <img src="./Images/LinkedIn.svg" alt="LinkedIn">
-      <h2>LinkedIn</h2>
-      <p>Professioneel netwerk</p>
-    </div>
-
-     <div>
-      <img src="./Images/Github.svg" alt="Github">
-      <h2>Github</h2>
-      <p>Code & projecten</p>
-    </div>
-
-     <div>
-      <img src="./Images/Insta.svg" alt="Insta">
-      <h2>Instagram</h2>
-      <p>Creatieve inspiratie</p>
-    </div>
-
-
-
-  </section>
-
- 
-</main>
     <footer class="footer">
       <p>© 2026 Lotte Carleer. Alle rechten voorbehouden.</p>
       <p>
-        Gemaakt met <img src="./Images/Icon (2).svg" alt="Liefde" /> en veel
-        creativiteit
+        Gemaakt met <img src="./Images/Icon (2).svg" alt="Liefde" /> en veel creativiteit
       </p>
     </footer>
   </body>
