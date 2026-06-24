@@ -932,6 +932,433 @@ main {
     }
 }
 
+/* ==========================
+   STUDIO CONNECT PAGINA
+========================== */
+
+.studio-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px 100px;
+}
+
+.studio-back {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.studio-header {
+    margin-top: 30px;
+}
+
+.studio-label {
+    display: inline-block;
+    background: #ffe4ef;
+    color: #e60076;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.studio-title {
+    font-size: 64px;
+    margin: 20px 0 10px;
+}
+
+.studio-meta {
+    color: #888;
+}
+
+.studio-tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.studio-tech-tags span {
+    color: #e60076;
+    font-size: 14px;
+}
+
+.studio-hero-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 50px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.studio-intro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.studio-intro-text p {
+    line-height: 1.8;
+    color: #666;
+}
+
+.studio-side-card {
+    background: white;
+    border: 1px solid #f5dbe7;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.studio-skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.studio-skill-list span {
+    background: #fdf2f8;
+    padding: 8px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+}
+
+.studio-live-btn {
+    display: block;
+    text-align: center;
+    background: #e60076;
+    color: white;
+    padding: 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.studio-problem-solution {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.studio-problem-card,
+.studio-solution-card {
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.studio-problem-card {
+    background: white;
+    border: 1px solid #f5dbe7;
+}
+
+.studio-solution-card {
+    background: linear-gradient(135deg,#ff2a8a,#e60076);
+    color: white;
+}
+
+.studio-process {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.studio-section-label {
+    background: #ffe4ef;
+    color: #e60076;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+}
+
+.studio-process-line {
+    position: relative;
+    margin-top: 60px;
+}
+
+.studio-process-line::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #f5dbe7;
+}
+
+.studio-step {
+    width: calc(50% - 40px);
+    margin-bottom: 40px;
+}
+
+.studio-left {
+    margin-right: auto;
+}
+
+.studio-right {
+    margin-left: auto;
+}
+
+.studio-step-card,
+.studio-image-placeholder {
+    background: white;
+    border: 1px solid #f5dbe7;
+    border-radius: 18px;
+    padding: 25px;
+    min-height: 180px;
+}
+
+.studio-image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e60076;
+}
+
+/* ==================================
+   RESULTATEN & IMPACT
+================================== */
+
+.studio-impact-section {
+    position: relative;
+    background: #fdf4f8;
+    border: 1px solid #f8ddea;
+    border-radius: 30px;
+    padding: 55px 35px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.studio-impact-section::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #f8ddea;
+    border-radius: 50%;
+    left: -90px;
+    bottom: -90px;
+}
+
+.studio-impact-section::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #f8ddea;
+    border-radius: 50%;
+    right: -90px;
+    top: -90px;
+}
+
+.studio-impact-title {
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.studio-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.studio-impact-card {
+    background: white;
+    border-radius: 16px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #f2e4eb;
+    box-shadow: 0 3px 12px rgba(0,0,0,.05);
+}
+
+.studio-impact-card img {
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+}
+
+.studio-impact-card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #5c6470;
+    line-height: 1.5;
+}
+
+/* ==================================
+   AWARD BANNER
+================================== */
+
+.studio-award-section {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        180deg,
+        #ff2c98 0%,
+        #e60076 100%
+    );
+
+    border-radius: 26px;
+
+    padding: 70px 100px;
+    text-align: center;
+    color: white;
+
+    margin-bottom: 90px;
+}
+
+.studio-award-section::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+
+    top: -110px;
+    left: -80px;
+}
+
+.studio-award-section::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.12);
+
+    bottom: -110px;
+    right: -80px;
+}
+
+.studio-award-icon {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+    background: rgba(255,255,255,.18);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.studio-award-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.studio-award-section h2 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.studio-award-section p {
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+.studio-award-pill {
+    display: inline-block;
+    margin-top: 30px;
+
+    padding: 10px 22px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,.2);
+
+    font-size: 14px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ==================================
+   CONTACT CTA
+================================== */
+
+.studio-contact-cta {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.studio-contact-cta h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.studio-contact-cta p {
+    color: #7a8492;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.studio-contact-button {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 999px;
+
+    background: linear-gradient(
+        90deg,
+        #ff2c98,
+        #e60076
+    );
+
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .studio-intro,
+    .studio-problem-solution,
+    .studio-results-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .studio-process-line::before {
+        left: 20px;
+    }
+
+    .studio-step {
+        width: 100%;
+        padding-left: 50px;
+        box-sizing: border-box;
+    }
+
+    .studio-title {
+        font-size: 42px;
+    }
+
+    .studio-hero-image {
+        height: 350px;
+    }
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
