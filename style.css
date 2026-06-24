@@ -320,6 +320,17 @@ main {
   display: block;
 }
 
+.project-image-AED img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
+  background-color: #f5dbe7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-content {
   padding: 30px;
   display: flex;
