@@ -964,7 +964,7 @@ main {
     color: white;
 }
 .challenge-card h3,
-.solution-card h3, {
+.solution-card h3 {
     margin-bottom: 15px;
     font-size: 1.4rem;
 }
@@ -992,34 +992,96 @@ main {
 }
 
 /* Results */
-
 .results-grid {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
-    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 50px;
 }
 
 .result-card {
-    background: white;
-    border: 1px solid #f5dbe7;
+    background: #fff;
+    border: 1px solid #ececec;
     border-radius: 16px;
-    padding: 25px;
+    padding: 24px 28px;
+
     display: flex;
-    align-items: center;
-    gap: 15px;
+    align-items: flex-start;
+    gap: 16px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+
+    color: #4a4a4a;
+    line-height: 1.7;
+    font-size: 15px;
 }
 
 .result-icon {
-    width: 40px;
-    height: 40px;
-    background: #ffe4ef;
-    color: #e60076;
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+
+    background: #ffe6f2;
+    color: #ff1493;
+
     border-radius: 50%;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* Roze achtergrond rond de hele sectie */
+
+.detail-section:has(.results-grid) {
+    background: #fff8fc;
+    border: 1px solid #f8d9e8;
+    border-radius: 28px;
+
+    padding: 60px 30px;
+    margin-top: 100px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.detail-section:has(.results-grid) h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* decoratieve cirkels */
+
+.detail-section:has(.results-grid)::before {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    background: #fbe8f1;
+    border-radius: 50%;
+
+    top: -90px;
+    right: -90px;
+}
+
+.detail-section:has(.results-grid)::after {
+    content: "";
+    position: absolute;
+
+    width: 140px;
+    height: 140px;
+
+    background: #fbe8f1;
+    border-radius: 50%;
+
+    bottom: -70px;
+    left: -70px;
 }
 
 @media (max-width: 900px) {
