@@ -1045,7 +1045,12 @@ main {
     margin-bottom: 20px;
     color: #ff2a8a;
     font-size: 24px;
-}a
+}
+
+.project-detail-image {
+    width: 100%;
+    height: auto;
+}
 
 /* Roze achtergrond rond de hele sectie */
 
