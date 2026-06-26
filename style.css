@@ -1622,6 +1622,10 @@ main {
 }
 
 .hero-image img{
+     width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
     transition: transform .5s ease, box-shadow .5s ease;
 }
 
