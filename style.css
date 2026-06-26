@@ -1966,16 +1966,26 @@ main {
     height: 520px;
     margin-top: 40px;
 
-    border: 2px dashed #f5dbe7;
-    border-radius: 24px;
-
-    background: #fff8fc;
+  
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     color: #e60076;
+}
+
+.about-photo img{
+     width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: transform .5s ease, box-shadow .5s ease;
+}
+
+.about-photo:hover img{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
 }
 
 .about-intro {
