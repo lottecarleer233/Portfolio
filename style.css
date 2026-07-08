@@ -1619,38 +1619,260 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 60px;
 }
 
-.hero-image img{
-     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 20px;
-    transition: transform .5s ease, box-shadow .5s ease;
+
+.sticker-wall{
+    width:520px;
+    height:450px;
+
+    background:white;
+
+    border:1px solid #f5dbe7;
+    border-radius:28px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+    padding:30px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content:center;
+    align-items:center;
+    gap:18px;
+
+    position:relative;
+
+    overflow:hidden;
 }
 
-.hero-image:hover img{
-    transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+.sticker-wall::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    background:#ffe4ef;
+
+    border-radius:50%;
+
+    top:-80px;
+    right:-80px;
+
 }
 
-  
+.sticker-wall::after{
 
-.placeholder {
-       width: 100%;
-    height: 100%;
-    border: 1px dashed #ffc7e2;
-    border-radius: 20px;
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    background:#fff2f8;
+
+    border-radius:50%;
+
+    bottom:-70px;
+    left:-70px;
+
+}
+
+.sticker{
+
+     position: relative;
+    z-index: 2;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ff83bf;
-    transition: .4s;
-   
+    text-align: center;
+
+    min-height: 52px;
+
+    padding: 12px 22px;
+
+    border-radius: 100px;
+
+    background: white;
+
+    border: 1px solid #f1d6e4;
+
+    font-weight: 600;
+
+    color: #333;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+
+    transition: .3s;
+
+    cursor: default;
+
+    user-select: none;
+
 }
 
-.placeholder:hover{
+.sticker:hover{
+
+    transform:translateY(-5px) rotate(-3deg) scale(1.05);
+
     border-color:#ff2f92;
+
+    color:#ff2f92;
+
+    box-shadow:0 12px 25px rgba(255,47,146,.18);
+
+}
+
+.large{
+
+    font-size:42px;
+
+    font-weight:700;
+
+    padding:20px 34px;
+
+    background:linear-gradient(135deg,#ff5fa9,#e60076);
+
+    color:white;
+
+    border:none;
+
+}
+
+.css,
+.ux{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+    padding:0;
+}
+
+.html,
+.figma{
+
+    height:70px;
+    padding:0 28px;
+
+    border-radius:999px;
+
+    width:auto;
+}
+
+.large:hover{
+
+    color:white;
+
+}
+
+.html{
+    transform:rotate(-7deg);
+}
+
+.css{
+    transform:rotate(5deg);
+}
+
+.react{
+    transform:rotate(-4deg);
+}
+
+.figma{
+    transform:rotate(8deg);
+}
+
+.ui{
+    transform:rotate(-6deg);
+}
+
+.ux{
+    transform:rotate(4deg);
+}
+
+.code{
+    transform:rotate(-9deg);
+}
+
+.branding{
+    transform:rotate(7deg);
+}
+
+.pixel{
+    transform:rotate(-5deg);
+}
+
+.creative{
+    transform:rotate(6deg);
+}
+
+.learning{
+    transform:rotate(-4deg);
+}
+
+.frontend{
+    transform:rotate(5deg);
+}
+
+
+
+.pink{
+
+    background:#ffe4ef;
+
+    color:#ff2f92;
+
+}
+
+.star,
+.heart{
+
+    position:absolute;
+
+    z-index:1;
+
+    color:#ff82bc;
+
+}
+
+.star1{
+
+    top:35px;
+    right:50px;
+    font-size:22px;
+
+}
+
+.star2{
+
+    bottom:60px;
+    left:45px;
+    font-size:18px;
+
+}
+
+.star3{
+
+    top:210px;
+    right:30px;
+    font-size:16px;
+
+}
+
+.heart{
+
+    bottom:40px;
+    right:60px;
+
+    font-size:28px;
+
 }
 
 .skills-bar {
@@ -2185,6 +2407,40 @@ main {
     margin: 0 20px;
     margin-bottom: 80px;
 }
+
+  .sticker-wall{
+        width:100%;
+        max-width:450px;
+        height:auto;
+        min-height:400px;
+
+        padding:25px;
+    }
+
+    .sticker{
+        font-size:15px;
+        padding:10px 18px;
+    }
+
+    .large{
+        width:100px;
+        height:75px;
+        font-size:36px;
+    }
+
+    .css,
+    .ux{
+        width:75px;
+        height:75px;
+    }
+
+    .html,
+    .figma{
+        height:60px;
+        width:auto;
+        padding:0 22px;
+    }
+
 
     
 
