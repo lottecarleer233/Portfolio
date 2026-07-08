@@ -1608,19 +1608,55 @@ main {
    NIEUWE HOMEPAGE ELEMENTEN
 ========================= */
 
-.hero-buttons {
+
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 60px;
+  gap: 40px;
+   margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 30px;
+}
+
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffe4ef;
+  color: #e60076;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.home-hero h1 {
+  font-size: 48px;
+  margin: 0 0 20px;
+}
+
+.home-hero h1 span {
+  color: #e60076;
+}
+
+.home-hero p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.home-hero-buttons {
     margin-top: 40px;
     display: flex;
     gap: 20px;
 }
 
-.hero-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-}
+
 
 
 .sticker-wall{
